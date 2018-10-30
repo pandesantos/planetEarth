@@ -14,9 +14,7 @@ var loader = new THREE.TextureLoader();
 
 /** add space background to the scene **/
 var geoSpace = new THREE.SphereGeometry(10000,32,32);
-
 var spaceTexture = loader.load('img/stars.png');
-
 var spaceMaterial = new THREE.MeshBasicMaterial({
 	map: spaceTexture
 });
@@ -34,9 +32,7 @@ var geoEarth = new THREE.SphereGeometry( 5, 32, 32 );
 
 
 var earthTexture = loader.load('img/earth.jpg'); // earth texture
-
-var bump =  loader.load('img/bump.jpg'); // bump texture for 
-
+var bump =  loader.load('img/bump.jpg'); // bump texture  
 var specular = loader.load('img/specular.jpg'); // shining texture
 
 var earthMaterial = new THREE.MeshPhongMaterial({
@@ -51,9 +47,7 @@ var earth = new THREE.Mesh( geoEarth, earthMaterial ); // earth created
 scene.add( earth ); // add earth to the scene
 
 var geoCloud = new THREE.SphereGeometry(5.1,32,32); // cloud texture
-
 var textureCloud = loader.load('img/cloud.png');
-
 var cloudMaterial = new THREE.MeshPhongMaterial({
 	map: textureCloud,
     transparent: true,
