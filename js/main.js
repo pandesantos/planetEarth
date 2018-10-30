@@ -35,7 +35,7 @@ var geoEarth = new THREE.SphereGeometry( 5, 32, 32 );
 
 var earthTexture = loader.load('img/earth.jpg'); // earth texture
 
-var bump =  loader.load('img/bump.jpg'); // bump texture for realistic
+var bump =  loader.load('img/bump.jpg'); // bump texture for 
 
 var specular = loader.load('img/specular.jpg'); // shining texture
 
